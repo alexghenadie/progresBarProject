@@ -13,19 +13,19 @@ const body = select('body')
 const background = create('div')
 
 const progressBarr = create('div')
-const patratBar1 = create('div')
-const nrPatrat1 = create('span')
-const textPatrat1 = create('div')
-const patratBar2 = create('div')
-const nrPatrat2 = create('span')
-const textPatrat2 = create('div')
-const patratBar3 = create('div')
-const nrPatrat3 = create('span')
-const textPatrat3 = create('div')
+const squareBar1 = create('div')
+const numberSquare1 = create('span')
+const textSquare1 = create('div')
+const squareBar2 = create('div')
+const numberSquare2 = create('span')
+const textSquare2 = create('div')
+const squareBar3 = create('div')
+const numberSquare3 = create('span')
+const textSquare3 = create('div')
 const lineBar1 = create('div')
 const lineBar2 = create('div')
 
-const toateFormulare = create('div')
+const allForms = create('div')
 
 const formular1 = create('div')
 const headerFormular1 = create('div')
@@ -33,8 +33,11 @@ const headerFormular1H1 = create('div')
 const headerFormular1H3 = create('div')
 const containerInput1 = create('div')
 const input11 = create('input')
+    const errorInput11 = create('p')
 const input12 = create('input')
+    const errorInput12 = create('p')
 const input13 = create('input')
+    const errorInput13 = create('p')
 const divbutonFormular1 = create('div')
 const butonFormular1 = create('button')
 
@@ -44,8 +47,11 @@ const headerFormular2H1 = create('div')
 const headerFormular2H3 = create('div')
 const containerInput2 = create('div')
 const input21 = create('input')
+    const errorInput21 = create('p')
 const input22 = create('input')
+    const errorInput22 = create('p')
 const input23 = create('input')
+    const errorInput23 = create('p')
 const divbutonFormular2 = create('div')
 const butonFormular21 = create('button')
 const butonFormular22 = create('button')
@@ -56,8 +62,11 @@ const headerFormular3H1 = create('div')
 const headerFormular3H3 = create('div')
 const containerInput3 = create('div')
 const input31 = create('input')
+    const errorInput31 = create('p')
 const input32 = create('input')
+    const errorInput32 = create('p')
 const input33 = create('input')
+    const errorInput33 = create('p')
 const divbutonFormular3 = create('div')
 const butonFormular31 = create('button')
 const butonFormular32 = create('button')
@@ -66,43 +75,49 @@ const butonFormular32 = create('button')
 body.prepend(background)
 background.append(progressBarr)
 
-progressBarr.append(patratBar1)
-patratBar1.append(nrPatrat1)
-patratBar1.append(textPatrat1)
+progressBarr.append(squareBar1)
+squareBar1.append(numberSquare1)
+squareBar1.append(textSquare1)
 progressBarr.append(lineBar1)
-progressBarr.append(patratBar2)
-patratBar2.append(nrPatrat2)
-patratBar2.append(textPatrat2)
+progressBarr.append(squareBar2)
+squareBar2.append(numberSquare2)
+squareBar2.append(textSquare2)
 progressBarr.append(lineBar2)
-progressBarr.append(patratBar3)
-patratBar3.append(nrPatrat3)
-patratBar3.append(textPatrat3)
-background.append(toateFormulare)
+progressBarr.append(squareBar3)
+squareBar3.append(numberSquare3)
+squareBar3.append(textSquare3)
+background.append(allForms)
 
-toateFormulare.append(formular1)
+allForms.append(formular1)
 formular1.append(headerFormular1)
 headerFormular1.append(headerFormular1H1)
 headerFormular1.append(headerFormular1H3)
 formular1.append(containerInput1)
 containerInput1.append(input11)
+containerInput1.append(errorInput11)
 containerInput1.append(input12)
+containerInput1.append(errorInput12)
 containerInput1.append(input13)
+containerInput1.append(errorInput13)
 formular1.append(divbutonFormular1)
 divbutonFormular1.append(butonFormular1)
 
-toateFormulare.append(formular2)
+allForms.append(formular2)
 formular2.append(headerFormular2)
 headerFormular2.append(headerFormular2H1)
 headerFormular2.append(headerFormular2H3)
 formular2.append(containerInput2)
 containerInput2.append(input21)
+containerInput2.append(errorInput21)
 containerInput2.append(input22)
+containerInput2.append(errorInput22)
 containerInput2.append(input23)
+containerInput2.append(errorInput23)
 formular2.append(divbutonFormular2)
 divbutonFormular2.append(butonFormular21)
 divbutonFormular2.append(butonFormular22)
 
-toateFormulare.append(formular3)
+allForms.append(formular3)
 formular3.append(headerFormular3)
 headerFormular3.append(headerFormular3H1)
 headerFormular3.append(headerFormular3H3)
@@ -118,17 +133,17 @@ divbutonFormular3.append(butonFormular32)
 background.classList.add('backgroundClass')
 
 progressBarr.classList.add('progressBarrClass')
-patratBar1.classList.add('patratBarClass')
-patratBar1.classList.add('currentPassProgressBarrClass')
-patratBar2.classList.add('patratBarClass')
-patratBar3.classList.add('patratBarClass')
+squareBar1.classList.add('squareBarClass')
+squareBar1.classList.add('currentPassProgressBarrClass')
+squareBar2.classList.add('squareBarClass')
+squareBar3.classList.add('squareBarClass')
 lineBar1.classList.add('lineBarClass')
 lineBar2.classList.add('lineBarClass')
-textPatrat1.classList.add('textPatrat')
-textPatrat2.classList.add('textPatrat')
-textPatrat3.classList.add('textPatrat')
+textSquare1.classList.add('textSquare')
+textSquare2.classList.add('textSquare')
+textSquare3.classList.add('textSquare')
 
-toateFormulare.classList.add('toateFormulareClass')
+allForms.classList.add('allFormsClass')
 
 formular1.classList.add('formularClass')
 headerFormular1.classList.add('headerFormularClass')
@@ -168,19 +183,12 @@ formular2.classList.add('fadeRight')
 formular3.classList.add('fadeRight')
 
 
-// formular2.classList.add('active')
-// formular3.classList.add('active')
-
-
-
-
-
-nrPatrat1.textContent = '1'
-textPatrat1.textContent = 'ACCOUNT SETUP'
-nrPatrat2.textContent = '2'
-textPatrat2.textContent = 'SOCIAL PROFILES'
-nrPatrat3.textContent = '3'
-textPatrat3.textContent = 'PROFESIONAL DETAILS'
+numberSquare1.textContent = '1'
+textSquare1.textContent = 'ACCOUNT SETUP'
+numberSquare2.textContent = '2'
+textSquare2.textContent = 'SOCIAL PROFILES'
+numberSquare3.textContent = '3'
+textSquare3.textContent = 'PROFESIONAL DETAILS'
 
 headerFormular1H1.textContent = 'CREATE YOUR ACCOUNT'
 headerFormular1H3.textContent = 'This is step 1'
@@ -197,11 +205,19 @@ butonFormular32.textContent = 'Submit'
 butonFormular31.textContent = 'Previous'
 
 
+// errorInput11.textContent = 'This fild can not be empty'
+// errorInput12.textContent = 'This fild can not be empty'
+// errorInput13.textContent = 'This fild can not be empty'
+
+
 input11.setAttribute('placeHolder', 'User Name')
-input12.setAttribute('placeHolder', 'Password')
-input13.setAttribute('placeHolder', 'Confirm Password')
 input12.setAttribute('type', 'password')
 input13.setAttribute('type', 'password')
+input12.setAttribute('placeHolder', 'Password')
+input13.setAttribute('placeHolder', 'Confirm Password')
+input12.setAttribute('autocomplete', 'new-password')
+input13.setAttribute('autocomplete', 'new-password')
+
 
 input21.setAttribute('placeHolder', 'Twitter')
 input22.setAttribute('placeHolder', 'Facebook')
@@ -212,45 +228,77 @@ input32.setAttribute('placeHolder', 'Second Name')
 input33.setAttribute('placeHolder', 'Phone')
 
 
+const formulare = [formular1, formular2, formular3]
 
-
-
-const formulare = [formular1,formular2,formular3]
-
-let cureent = formulare.findIndex(step =>{
+let cureent = formulare.findIndex(step => {
     return step.classList.contains('active')
 })
 
 console.log(cureent)
 
-if (cureent === -1){
-    cureent = 0;
-}
+// if (cureent === -1) {
+//     cureent = 0;
+// }
 
-toateFormulare.addEventListener('click', (event) =>{
 
-    if (event.target.classList[0] === 'butonFormular1Class'){
+const allInputs = [...selectAll('input')]
+
+allForms.addEventListener('click', (event) => {
+
+    let countInputs = 0
+    allInputs.forEach(item => {
+        if (formulare[cureent].contains(item) && item.value !== '') {
+            countInputs++
+        }
+    })
+    console.log(countInputs)
+
+    if (event.target.classList[0] === 'butonFormular1Class') {
+
+        if (countInputs === 3 && input12.value === input13.value) {
+            formulare[cureent].classList.remove('active')
+            cureent += 1
+            formulare[cureent].classList.add('active')
+        }
+        allInputs.forEach(item =>{
+
+            if(countInputs !== 3 && formulare[cureent].contains(item)){
+                if(item.value === ''){
+                    item.classList.add('errorInput')
+                    item.nextElementSibling.textContent = 'This fild can not be empty'
+                    item.nextElementSibling.classList.add('active')
+                }
+            }else if(input12.value !== input13.value){
+                alert('Your Password is not equal with Confirm Password')
+            }
+        })
+
+    }
+
+
+
+    if (event.target.classList[0] === 'butonFormularPreviousClass') {
         formulare[cureent].classList.remove('active')
-        cureent +=1
-        formulare[cureent].classList.add('active')
-    }else if(event.target.classList[0] === 'butonFormularPreviousClass'){
-        formulare[cureent].classList.remove('active')
-        cureent -=1
+        cureent -= 1
         formulare[cureent].classList.add('active')
     }
 
-    if (cureent === 1){
-        patratBar2.classList.add('patratLineProgrees')
+    if (cureent === 1) {
+        squareBar2.classList.add('patratLineProgrees')
         lineBar1.classList.add('patratLineProgrees')
-        patratBar3.classList.remove('patratLineProgrees')
+        squareBar3.classList.remove('patratLineProgrees')
         lineBar2.classList.remove('patratLineProgrees')
-
-    }else if (cureent === 2){
-        patratBar3.classList.add('patratLineProgrees')
+    } else if (cureent === 2) {
+        squareBar3.classList.add('patratLineProgrees')
         lineBar2.classList.add('patratLineProgrees')
-    }else if (cureent === 0){
-        patratBar2.classList.remove('patratLineProgrees')
+
+    } else if (cureent === 0) {
+        squareBar2.classList.remove('patratLineProgrees')
         lineBar1.classList.remove('patratLineProgrees')
     }
+
+
 })
+
+
 

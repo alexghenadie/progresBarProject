@@ -23,7 +23,7 @@ html, body, .backgroundClass {
     margin: 50px;
 }
 
-.patratBarClass{
+.squareBarClass{
     width: 20px;
     height: 20px;
     background-color: white;
@@ -45,7 +45,7 @@ html, body, .backgroundClass {
     color: white;
 }
 
-.textPatrat{
+.textSquare{
     width: 150px;
     font-size: 12px;
     transform: translateY(5px);
@@ -59,7 +59,7 @@ html, body, .backgroundClass {
     color: white;
 }
 
-.toateFormulareClass{
+.allFormsClass{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -97,14 +97,34 @@ input{
     width: 80%;
     height: 35px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 18px;
     resize: none;
     outline: none;
 }
 
+p{
+    height: 15px;
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-self: flex-start;
+    margin-left: 30px;
+    color: red;
+    display: none ;
+}
+
+.errorInput{
+    border-color: red;
+}
+
+
+
 input:focus{
     border-radius: 2px;
+    border-color: #191919;
+
 }
 
 .divbutonFormular1Class{
